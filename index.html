@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Your Free Gift Card!</title>
+  <meta property="og:url" content="https://thebestoffer90.online" />
+  <meta property="og:title" content="Get Your Free Gift Card!" />
+  <meta property="og:description" content="Claim your free $100 Gift Card now - Limited Time Offer!" />
+  <meta property="og:image" content="https://thebestoffer90.online/images/giftcard.png" />
+  <link rel="icon" type="image/png" href="https://thebestoffer90.online/favicon.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://th.bing.com/th/id/OIP.XoODo0hd7QDrYfchYy2wMwHaEK?w=330&h=185&c=7&r=0&o=5&pid=1.7') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, #000000cc, #000000cc);
+      z-index: -1;
+    }
+    .container {
+      padding: 50px 20px;
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .countdown {
+      font-size: 1.5em;
+      background: #00000099;
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #218838;
+    }
+    .comments {
+      margin-top: 50px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .comment {
+      background: #ffffff22;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    .platform {
+      font-weight: bold;
+      color: #ffe600;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #000;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      .btn {
+        padding: 12px 20px;
+        font-size: 1em;
+      }
+      .comment {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="popup" class="popup">
+    ⏰ Hurry! Less than 1 hour left to claim your gift card!
+  </div>
+
+  <div class="container">
+    <h1>🎁 Claim Your $100 Gift Card Now!</h1>
+    <p style="font-size: 1.2em; font-weight: bold; color: #ffe600; margin-bottom: 20px;">🎉 Don't miss out! This is your chance to grab a FREE $100 gift card! Simply complete the steps below and unlock your reward!</p>
+    
+    <div class="countdown" id="countdown">Offer ends in: 72:00:00</div>
+    <br><br>
+    
+    <a href="https://unlockcontent.net/cl/i/x6wwnl" class="btn">Unlock Your Reward</a>
+    
+    <p style="font-size: 1.2em; margin-top: 20px; color: #ffe600;">🚀 Time is running out! Act now to get your $100 gift card before it's too late!</p>
+
+    <div class="comments">
+      <div class="comment"><span><img src="https://i.pravatar.cc/30?img=1" class="avatar">Facebook:</span> I just got my card! Thanks so much 🙌</div>
+      <div class="comment"><span><img src="https://i.pravatar.cc/30?img=2" class="avatar">Twitter:</span> Can't believe it worked 😍 got my $100 gift card!</div>
+      <div class="comment"><span><img src="https://i.pravatar.cc/30?img=3" class="avatar">Instagram:</span> Shared this with my friends, we all got it 😄</div>
+      <div class="comment"><span><img src="https://i.pravatar.cc/30?img=4" class="avatar">Facebook:</span> It took 2 minutes, totally worth it 🔥</div>
+      <div class="comment"><span><img src="https://i.pravatar.cc/30?img=5" class="avatar">Twitter:</span> This is legit guys, don't miss out 💸</div>
+    </div>
+
+    <p class="footer">
+      Powered by <a href="https://thebestoffer90.online" style="color:#90ee90;">thebestoffer90.online</a>
+    </p>
+  </div>
+
+  <script>
+    let timeLeft = 3 * 24 * 60 * 60;
+    const countdownEl = document.getElementById('countdown');
+    let popupShown = false;
+
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'block';
+      setTimeout(() => popup.style.display = 'none', 8000);
+    }
+
+    function updateCountdown() {
+      const hours = Math.floor(timeLeft / 3600);
+      const minutes = Math.floor((timeLeft % 3600) / 60);
+      const seconds = timeLeft % 60;
+
+      countdownEl.innerText = `Offer ends in: ${hours.toString().padStart(2, '0')}:
+        ${minutes.toString().padStart(2, '0')}:
+        ${seconds.toString().padStart(2, '0')}`;
+
+      if (timeLeft <= 3600 && !popupShown) {
+        showPopup();
+        popupShown = true;
+      }
+
+      if (timeLeft > 0) timeLeft--;
+      else {
+        countdownEl.innerText = 'Offer expired!';
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
